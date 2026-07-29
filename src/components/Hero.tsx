@@ -7,15 +7,15 @@ export const Hero: React.FC = () => {
     <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center justify-center overflow-hidden border-b border-[#1A1D2D]/60 bg-[#07080C]">
       
       {/* Background Image with Gradients */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute inset-0 z-0 overflow-hidden flex justify-end">
         <img 
           src={heroBg} 
           alt="BotLeague Arena Stage" 
-          className="w-full h-full object-cover object-right sm:object-center brightness-105 contrast-105"
+          className="w-full sm:w-3/4 md:w-2/3 h-full object-cover object-right brightness-110 contrast-105"
         />
-        {/* Dark gradient on the left side behind text for perfect contrast & readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07080C] via-[#07080C]/90 to-transparent sm:w-3/5 md:w-1/2" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#07080C] via-transparent to-[#07080C]/40" />
+        {/* Dark gradient fade on the left side */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#07080C] via-[#07080C]/90 to-transparent w-full sm:w-2/3 md:w-1/2" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#07080C] via-transparent to-[#07080C]/50" />
       </div>
 
       {/* Top Notification Bar Badge (FLAME Watch Live) */}
