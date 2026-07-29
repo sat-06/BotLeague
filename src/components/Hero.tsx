@@ -7,16 +7,15 @@ export const Hero: React.FC = () => {
     <section className="relative min-h-[580px] lg:min-h-[640px] flex items-center justify-center overflow-hidden border-b border-[#1A1D2D]/60 bg-[#07080C]">
       
       {/* Background Image with Gradients */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 overflow-hidden">
         <img 
           src={heroBg} 
           alt="BotLeague Arena Stage" 
-          className="w-full h-full object-cover object-center opacity-40 mix-blend-luminosity scale-105"
+          className="w-full h-full object-cover object-right sm:object-center brightness-105 contrast-105"
         />
-        {/* Dark vignettes & atmospheric glows */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#07080C] via-transparent to-[#07080C]/80" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#07080C] via-[#07080C]/50 to-[#07080C]" />
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-72 bg-[#FF3B5C]/15 blur-[120px] rounded-full pointer-events-none" />
+        {/* Dark gradient on the left side behind text for perfect contrast & readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#07080C] via-[#07080C]/90 to-transparent sm:w-3/5 md:w-1/2" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#07080C] via-transparent to-[#07080C]/40" />
       </div>
 
       {/* Top Notification Bar Badge (FLAME Watch Live) */}
