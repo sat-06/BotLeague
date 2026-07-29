@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #07080C;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-tech {
+    font-family: 'Orbitron', sans-serif;
+  }
+}
+
+/* Custom sci-fi styling utilities */
+.glow-text-red {
+  text-shadow: 0 0 12px rgba(255, 59, 92, 0.6);
+}
+
+.glow-text-gold {
+  text-shadow: 0 0 12px rgba(234, 179, 8, 0.6);
+}
+
+.glow-text-white {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.bg-gradient-red-btn {
+  background: linear-gradient(135deg, #FF3B5C 0%, #E02E4C 100%);
+}
+
+.bg-gradient-red-btn:hover {
+  background: linear-gradient(135deg, #FF5270 0%, #FF3B5C 100%);
+  box-shadow: 0 0 20px rgba(255, 59, 92, 0.6);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07080C;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F2436;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF3B5C;
+}
